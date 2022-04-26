@@ -1,0 +1,192 @@
+@media (min-width:320px) and (max-width: 480px){
+
+    .header{
+        width: 100%;
+    }
+
+    .header_main{
+        height: 70px;
+    }
+
+    .nav{
+        /* width: 100%; */
+        display: block;
+    }
+
+
+
+    .logo{
+        height: 70px;
+        width: 100%;
+    }
+
+    .logo a {
+        height: 70px;
+        text-align: center;
+        padding-left: 30px;
+    }
+
+    .logo a img {
+        width: 70px;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .hamburger span{
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+        padding: 1px 0 ;
+        background-color: rgb(255, 255, 255);
+        /* color: black; */
+        display: block;
+    }
+
+    .nav_list {
+        width: 100%;
+        display: none;
+        
+    }
+
+    .nav_list ul {
+        /* overflow: hidden; */
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        /* height: 64px; */
+        position: relative;
+        padding-top: 10px;
+        background-color: #000000;
+        /* color: black; */
+        /* height: 0px; */
+    }
+
+    .nav_list ul li {
+        padding: 0px;
+    }
+
+
+    /* .nav_list ul li {
+        width: 100%;
+        padding: 0px;
+        height: 30px;
+        line-height: 30px;
+    } */
+
+    .nav_list ul li a {
+        color: white;
+        font-size: 16px;
+    }
+
+
+    /* banner Container  */
+    .mobile_vw{
+        display: block;
+    }
+    .desktop_vw{
+        display: none;
+    }
+
+    .banner{
+        padding: 15px 0; 
+    }
+    .banner_container{
+        width: 100%;
+        overflow-x: scroll;
+        /* display: none; */
+    }
+
+    .banner_sec{
+        width: 200%;
+    }
+
+    .banner_img img{
+
+        width: 100%;
+    }
+
+    /* Products Section  */
+
+    .products{
+        padding: 15px 0;
+    }
+
+    .product_sec{
+        flex-wrap: wrap;
+    }
+
+    .product_card{
+        padding: 10px;
+    }
+
+    /* Product collection  */
+
+    .cards{
+        padding: 15px 0;
+    }
+
+    .card_img{
+        width: 50%;
+        padding: 8px;
+    }
+
+    /* Mens / Women / Customized product Section  */
+
+    .product, .w_product, .c_product {
+        height: 500px;
+        width: 100%;
+    }
+
+    
+
+    /* .contact section  */
+
+    .contact{
+        padding: 10px 0;
+    }
+
+    .contact_sec{
+        flex-wrap: wrap;
+    }
+
+    .contact_type{
+        padding: 8px 0;
+        width: 100%;
+    }
+
+    .contact_type h2{
+        font-size: 14px;
+    }
+
+    /* footer section */
+    .footer_sec{
+        flex-wrap: wrap;
+        width: 15px 0;
+    }
+
+    .footer_add{
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .footer_add h2{
+        padding-bottom: 8px;
+        color: #f0b212;
+    }
+
+    .footer_intro{
+        margin: 15px 0 15px 0;
+        width: 80%;
+        margin-left: 0px;
+    }
+
+    .footer_intro p{
+        font-size: 16px;
+        padding-left: 8px;
+    }
+}

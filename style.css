@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.mobile{
+	display: none;
+}
+
+/* Global Css */
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	/* background-color: #100f0f; */
+	margin: 0;
+	padding: 0;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    width: 90%;
+}
+
+/* header  */
+
+.header{
+	padding: 0 0 20px 0;
+	background-color: #000000;
+}
+
+.header_main{
+	background-color: #000000;
+    height: 100px;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+.nav_sec{
+	width: auto;
+	display: flex;
+}
+
+.logo{
+	display: flex;
+	/* width: 100%; */
+	height: 100px;
+	/* background-color: black; */
+}
+
+.logo a {
+	width: 100%;
+}
+
+/* .logo a img{
+	width: 90%;
+} */
+
+.logo a{
+	height: 100px;
+}
+
+.logo a img{
+	border-radius: 50%;
+	
+}
+
+.nav_list {
+	line-height: 70px;
+	width: 70%;
+	
+}
+
+.nav_list ul{
+	list-style: none;
+	color: black;
+	font-size: 18px;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: bold;
+
+}
+
+
+.nav_list ul li {
+	padding: 15px;
+}
+
+.nav_list ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	transition: .4s;
+	
+}
+
+
+.nav_list ul li a:hover{
+	color: #f0b212;
+}
+
+.nav_list ul li::before{
+	content: HOT;
+	font-size: 14px;
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	line-height: 14px;
+
+}
+
+  /* Banner Section */
+
+  .desktop_vw{
+	  display: block;
+  }
+
+  .mobile_vw{
+	  display: none;
+  }
+
+
+  .banner{
+	  background-color: #000000;
+	  padding: 0 0 20px 0;
+  }
+
+  .banner_img{
+	  width: 100%;
+  }
+
+  .banner_img img{
+	  width: 100%;
+  }
+
+  
+
+  .banner_container{
+	  width: 100%;
+	  overflow: hidden;
+	  
+  }
+
+  
+
+  .banner_sec{
+	  display: flex;
+	  width: 200%;
+  }
+
+  /* Product Section  */
+
+  .products{
+	  background-color: #000000;
+	  padding: 50px 0;
+
+  }
+
+  .product_sec{
+	display: flex;
+	justify-content: center;
+	}
+
+  .product_card{
+	  width:inherit;
+	  padding: 25px;
+	  
+  }
+
+  .product_card a img{
+	transition: .7s ;
+  }
+
+  	.product_card a img:hover{
+		  transform: scale(1.1);
+	  }
+  /* Cards Section  */
+
+  .card{
+	  background-color: #000000;
+  }
+
+  .cards{
+	  padding: 50px 0;
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  flex-wrap: wrap;
+  }
+
+  .card_img{
+	  width: 20%;
+	  cursor: pointer;
+	  padding: 20px;
+  }
+
+  .card_img a{
+	  width: inherit;
+  }
+
+  .card_img a img{
+	  
+	  /* height: 300px ; */
+	  transition: .3s;
+  }
+
+  .card_img a img:hover{
+	  transform: scale(1.1);
+  }
+
+
+  /* 2nd page  */
+
+  /* Mens Products Section */
+
+  
+.products_container{
+    flex-direction: column;
+    align-items: center;
+	padding: 50px 0;
+}
+
+.products_section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    row-gap: 30px;
+    column-gap: 4%;
+    margin: 30px 0 0 0;
+}
+
+.product{
+    height: 500px;
+    width: 22%;
+    background-color: white;
+    border-radius: 10px ;
+    background-image: url(media/product-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    display: flex;
+	/* flex-wrap: wrap; */
+    align-items: flex-end;
+    overflow: hidden;
+	transition: .4s;
+}
+
+.product:nth-child(1){
+    background-image: url(images/mens-t-shirts-adventure-1-500x625.jpg);
+
+}
+
+.product:nth-child(2){
+    background-image: url(images/mens-t-shirts-solivagant-2-500x625.jpg);
+
+}
+
+.product:nth-child(3){
+    background-image: url(images/mens-t-shirts-bike-3-500x625.jpg);
+
+}
+
+.product:nth-child(4){
+    background-image: url(images/mens-t-shirts-musafir-5-500x625.jpg);
+
+}
+
+.product:nth-child(5){
+    background-image: url(images/mens-t-shirts-journey-6-500x625.jpg);
+
+}
+
+.product:nth-child(6){
+    background-image: url(images/mens-t-shirts-wanderlust-14-500x625.jpg);
+
+}
+
+.product:nth-child(7){
+    background-image: url(images/mens-t-shirts-wanderlust-19-500x625.jpg);
+
+}
+
+.product:nth-child(8){
+    background-image: url(images/mens-t-shirts-rahi-3-500x625.jpg);
+
+}
+
+.product:hover{
+	transform: rotateZ(-2deg);
+	/* transform: rotateY(3deg); */
+	
+	box-shadow: 10px 10px 5px grey;
+}
+
+
+
+.details{
+	padding: 10px 0 0 0;
+    height: 85px;
+	width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    transition: .4s;
+
+}
+
+.details:hover{
+    height: 180px;
+}
+
+.details_container{
+    padding: 0 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ /* End of 2nd page */
+
+ /* 3rd page  women tshirt*/
+
+ .w_product{
+    height: 500px;
+    width: 22%;
+    background-color: white;
+    border-radius: 10px ;
+    background-image: url(media/product-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    display: flex;
+	/* flex-wrap: wrap; */
+    align-items: flex-end;
+    overflow: hidden;
+	transition: .4s;
+}
+
+.w_product:nth-child(1){
+    background-image: url(images/women-t-shirt-fuck-2-500x625.jpg);
+
+}
+
+.w_product:nth-child(2){
+    background-image: url(images/women-t-shirt-nirvana-1-500x625.jpg);
+
+}
+
+.w_product:nth-child(3){
+    background-image: url(images/women-t-shirt-good-vibes-2-500x625.jpg);
+
+}
+
+.w_product:nth-child(4){
+    background-image: url(images/women-t-shirt-google-2-500x625.jpg);
+
+}
+
+.w_product:nth-child(5){
+    background-image: url(images/women-t-shirt-humble-kind-4-500x625.jpg);
+
+}
+
+.w_product:nth-child(6){
+    background-image: url(images/women-t-shirt-idgaf-1-500x625.jpg);
+
+}
+
+.w_product:nth-child(7){
+    background-image: url(images/women-t-shirt-india-1-500x625.jpg);
+
+}
+
+.w_product:nth-child(8){
+    background-image: url(images/women-t-shirt-god-is-dead-1-500x625.jpg);
+
+}
+
+.w_product:hover{
+	transform: rotateZ(-2deg);
+	/* transform: rotateY(3deg); */
+	
+	box-shadow: 10px 10px 5px grey;
+}
+
+
+
+ /* End of 3rdpage  */
+
+  /* 4th Page of customized tshirt  */
+
+  .c_product{
+    height: 500px;
+    width: 22%;
+    background-color: white;
+    border-radius: 10px ;
+    background-image: url(media/product-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    display: flex;
+	flex-wrap: wrap;
+    align-items: flex-end;
+    overflow: hidden;
+	transition: .4s;
+}
+
+.c_product:nth-child(1){
+    background-image: url(images/black-8.jpeg);
+
+}
+
+.c_product:nth-child(2){
+    background-image: url(images/black-7.jpeg);
+}
+
+.c_product:nth-child(3){
+    background-image: url(images/black-5.jpeg);
+
+}
+
+.c_product:nth-child(4){
+    background-image: url(images/Fly.jpeg);
+
+}
+
+.c_product:nth-child(5){
+    background-image: url(images/color-1.jpeg);
+
+}
+
+.c_product:nth-child(6){
+    background-image: url(images/color-2.jpeg);
+
+}
+
+.c_product:nth-child(7){
+    background-image: url(images/color-3.jpeg);
+
+}
+
+.c_product:nth-child(8){
+    background-image: url(images/color-4.jpeg);
+
+}
+
+.c_product:nth-child(9){
+    background-image: url(images/black-1.jpeg);
+
+}
+
+.c_product:nth-child(10){
+    background-image: url(images/black-2.jpeg);
+
+}
+
+.c_product:nth-child(11){
+    background-image: url(images/faith.jpeg);
+
+}
+
+.c_product:nth-child(12){
+    background-image: url(images/black-4.jpeg);
+
+}
+
+.c_product:nth-child(13){
+    background-image: url(images/white-1.jpeg);
+
+}
+
+.c_product:nth-child(14){
+    background-image: url(images/black12.jpeg);
+
+}
+
+.c_product:nth-child(15){
+    background-image: url(images/color-5.jpeg);
+
+}
+
+.c_product:nth-child(16){
+    background-image: url(images/black-9.jpeg);
+
+}
+
+.c_product:hover{
+	transform: rotateZ(-2deg);
+	/* transform: rotateY(3deg); */
+	
+	box-shadow: 10px 10px 5px grey;
+}
+
+
+  /* Contact Section */
+
+  .contact{
+	  background-color: #f0b212;
+	  /* height: 70px; */
+	  padding: 10px 0;
+	  
+  }
+
+  .contact_sec{
+	  padding: 35px 0;
+	  width: 100%;
+	  /* height: 70px; */
+	  display: flex;
+	  
+  }
+
+  .contact_type{
+	  display:flex;
+	  justify-content: center;
+	  align-items: center;
+	  cursor: pointer;
+	  width: 50%;
+	  /* height: 70px; */
+	  background-color: #f0b212;
+	  /* line-height: 70px; */
+  }
+
+  
+
+  .contact_type h2{
+		transition: .5s ease-in-out;
+	  text-align: center;
+	  font-size: 20px;
+	  font-weight: 600;
+	  color: white;
+	  background-color: #f0b212;
+  }
+
+  .contact_type h2:hover, .contact_type  i:hover{
+	  color: black;
+  }
+  .contact_type i{
+	  
+	  align-self: center;
+	  padding-right: 10px;
+	  color: white;
+	  background-color: #f0b212;
+  }
+
+
+  /* Footer Section  */
+
+  .footer{
+	  background-color: black;
+  }
+
+  
+
+  .footer_sec{
+	  justify-content: space-around;
+	  display: flex;
+	  width: 100%;
+	  padding: 50px 0;
+	  
+  }
+
+  .footer_intro{
+	  text-align: justify;
+	  margin-left: 50px;
+	  width: 45%;
+	  /* background-color: red; */
+  }
+
+  .intro{
+	  width: 100%;
+  }
+
+  .intro a {
+	  padding-bottom: 15px;
+  }
+
+  .footer_intro p{
+	  padding-bottom: 15px;
+	font-size: 18px;
+	color: white ;
+}
+
+.footer_sec a img{
+	width: 100px;
+}
+
+  .social {
+	  text-align: left;
+	  width: 100%;
+  }
+
+  .social a {
+	  text-align: center;
+	width: 60px;
+	height: 60px;
+	margin: 0 6px;
+	
+  }
+
+
+  .footer_add{
+	  /* text-align: center; */
+	  padding-left: 50px;
+  }
+
+  .footer_add h2{
+	  padding-bottom: 15px;
+	  color: white;
+  }
+  
+  .footer_add a{
+	  /* padding: 0 0 0 310px; */
+	  text-align: justify;
+	  display: block;
+	  line-height: 40px;
+	  text-decoration: none;
+	  color: white;
+  }
+
+  .footer_add a:hover, .footer_add a i:hover{
+	  color: #f0b212;
+  }
+
+  .social a i{
+	  color: white;
+	  font-size: 28px;
+	  transition: .4s;
+  }
+
+  .social a i:hover {
+	  transform: rotateY(180deg);
+	
+  }
+
+  
+
+  
+
+  
+
+  
+  
+
